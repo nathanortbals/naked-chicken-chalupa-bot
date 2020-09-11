@@ -1,5 +1,4 @@
 const Twitter = require('twitter');
-const logger = require('./logger');
 
 const twitterClient = new Twitter({
   consumer_key: process.env.TWITTER_CONSUMER_KEY,
@@ -11,11 +10,11 @@ const twitterClient = new Twitter({
 module.exports.tweet = async (status) => {
     try {
       await twitterClient.post('statuses/update', {status: status});
-      logger(`Successfully tweeted: ${status}`);
+      console.log(`Successfully tweeted: ${status}`);
       return;
     }
     catch(error) {
-      logger(`Error sending tweet: ${JSON.stringify(error)}`);
+      console.log(`Error sending tweet: ${JSON.stringify(error)}`);
       return;
     }
   };

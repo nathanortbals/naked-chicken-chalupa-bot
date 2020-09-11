@@ -1,11 +1,10 @@
 const date = require('date-and-time');
-const logger = require('./logger');
 
 const chalupaAvailable = process.env.CHALUPA_AVAILABLE === 'true';
 
 const lastChalupaDate = date.parse(process.env.LAST_CHALUPA_DATE, 'YYYY-MM-DD');
 if (isNaN(lastChalupaDate)) {
-  logger('Error: Cannot parse LAST_CHALUPA_DATE environment variable')
+  console.log('Error: Cannot parse LAST_CHALUPA_DATE environment variable')
 }
 
 const daysSinceChalupa = () => {
