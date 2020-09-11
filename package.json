@@ -5,15 +5,13 @@
   "scripts": {
     "start": "node ./app.js"
   },
-  "engines" : {
+  "engines": {
     "node": "12.x"
   },
   "dependencies": {
     "cron": "^1.8.2",
     "date-and-time": "^0.14.1",
+    "dotenv": "^8.2.0",
     "twitter": "^1.7.1"
-  },
-  "devDependencies": {
-    "dotenv": "^8.2.0"
   }
 }
