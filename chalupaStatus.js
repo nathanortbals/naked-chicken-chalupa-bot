@@ -15,9 +15,9 @@ const daysSinceChalupa = () => {
 
 module.exports = () => {
   if(chalupaAvailable) {
-    return 'The Naked Chicken Chalupa is currently on the menu. We did it boys! 😋😋😋';
+    return 'The #NakedChickenChalupa is currently on the menu. We did it boys! 😋😋😋';
   }
 
-  return `It has been ${daysSinceChalupa()} days since the Naked Chicken Chalupa ` +
+  return `It has been ${daysSinceChalupa()} days since the #NakedChickenChalupa ` +
     `was on the Taco Bell menu. Bring back that crispy boy! ✊✊✊`
 };
